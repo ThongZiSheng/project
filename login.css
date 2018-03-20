@@ -1,0 +1,91 @@
+body{
+		background-image: url("background.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		color: white;	
+}
+header img{
+	 display: block;
+   margin-left:auto;
+   margin-right:auto;
+}
+button{
+	
+}
+.signup{
+	font-size: 20px;
+	color: red;
+	text-align: right;
+}
+
+
+footer{
+	color: white;
+	clear:both;
+	margin-top: 20px;
+	background-color: grey; 
+	text-align: center;
+	padding-bottom: 30px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.contect img{
+	height: 2%;
+	width: 2%; 
+	float: right;
+}
+.riot img{
+	height: 5%;
+	width:5%;
+	float: left;
+	margin-top:-50px;
+}
+fieldset{
+	color: black;
+	background-color: white;
+	opacity: .9;
+	font-size: 15px;
+
+}
+
+
+/*for mobile size responsive*/
+
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+header img{
+	width: 70%;
+	height: 70%;
+}
+ul{
+	display: none;
+}
+.signup{
+	font-size: 30px;
+}
+footer{
+	font-size: 20px;
+}
+footer img{
+	width: 15%;
+	height: 15%;
+}
+img{
+	width: 50%;
+	height:50%;
+}
+.contect{
+	display: none;
+}
+.riot{
+	width: 500%;
+	height: 500%;
+	padding-top: 10%;
+	margin-bottom: 10%;
+}
+}
