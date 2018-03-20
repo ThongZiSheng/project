@@ -4,6 +4,9 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="item.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 	</style>
 </head>
@@ -15,6 +18,48 @@
       <button type="submit" style="height: 25px;width:25px;">
 		<i class="fa fa-search"></i>
       </button>
+
+      <!-- Sidebar (hidden by default) -->
+<div class="sidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:50%;max-width:500px; color: red" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button w3-animate-right" style="color: black">X</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="story.html" onclick="w3_close()" class="w3-bar-item w3-button">Story</a>
+  <a href="ablility.html" onclick="w3_close()" class="w3-bar-item w3-button">Ability</a>
+  <a href="item.html" onclick="w3_close()" class="w3-bar-item w3-button">Item</a>
+  <a href="skin.html" onclick="w3_close()" class="w3-bar-item w3-button">Skin</a>
+</nav>
+
+
+<div class="w3-top">
+  <div class="w3-xlarge" style="min-width:500px; ">
+    <div class="w3-button w3-padding-16 w3-left" style="color: red" onclick="w3_open()">☰</div>
+    
+  </div>
+</div>
+  
+
+</div>
+</div>
+
+<!--Script to open and close sidebar-->
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+
+      <div class="signup">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+  	  </div>
 	<ul style="opacity: 0.9; margin-bottom: 90px;">
 		<li><a>STORY</a>
 			<ul>
@@ -39,9 +84,9 @@
 		</li>
 		<li><a>SKIN</a>
 			<ul>
-				<li><a href="https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a6/Kindred_OriginalSkin.jpg/revision/latest?cb=20170615234802">DEFAULT</a></li>
-				<li><a href="https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b9/Kindred_ShadowfireSkin.jpg/revision/latest?cb=20170615234824">SHADOWFIRE</a></li>
-				<li><a href="https://vignette.wikia.nocookie.net/leagueoflegends/images/8/83/Kindred_SuperGalaxySkin.jpg/revision/latest?cb=20170615234843">SUPER GALAXY</a></li>
+				<li><a href="skin.html">DEFAULT</a></li>
+				<li><a href="skin.html">SHADOWFIRE</a></li>
+				<li><a href="skin.html">SUPER GALAXY</a></li>
 			</ul></li>
 	</ul>
 	</header>
@@ -51,9 +96,12 @@
 		* Each section of the build is rated independently of the others<br>
 	</fieldset style="opacity:0.9;">
 	<fieldset style="opacity: 2;">
-		<p style="text-align: center;"><img src="image/lineLamb.png"></p>
+		<p style="text-align: center;"><img src="image/lineTwo.png"></p>
 		<caption><h1><ins>Item</ins></h1></caption>
 		<h3>52% OF WIN Rate!!!!</h3>
+
+		
+		<div class="packet">
 	<fieldset style="text-align: center;">
 		<caption><h3>Starter Packet</h3></caption>
 		<img src="image/hunter.png" style="width: 5%; height: 5%;"><br>
@@ -70,7 +118,7 @@
 	</fieldset>
 	<fieldset style="text-align: center;">
 		<caption><h3>Core Item's</h3></caption>
-		<p style="text-align: center;"><img src="image/lineWolf.png"></p>
+		<p style="text-align: center;"><img src="image/lineTwo.png"></p>
 		<img src="image/saber.png" style="width: 5%; height: 5%;"><br>
 		<ins>SKIRMISHER'S SABRE - WARRIOR</ins><br>
 		<img src="image/shiv.png" style="width: 5%;height: 5%;"><br>
@@ -86,18 +134,18 @@
 	</fieldset>
 	<p style="text-align: center;"><img src="image/lineTwo.png"></p>
 	</fieldset>
+</div>
 		
 
 	<footer>
-		<h4><a href="https://na.leagueoflegends.com/en/"><img src="image/1.png" height="3%" width="3%"></a>&copy;Copyright 2018 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks,<br>services marks, or registered trademarks of Riot Games, Inc.</h4>
+		<h4><a href="https://na.leagueoflegends.com/en/"><img src="image/1.png" height="3%" width="3%"></a>&copy;Copyright 2018 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, <br>services marks, or registered trademarks of Riot Games, Inc.</h4>
 		<div class="contect">
 			<a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=106440"><img src="image/google.png"></a>
 			<a href="https://twitter.com/leagueoflegends"><img src="image/twitter.png"></a>
 			<a href="https://steamcommunity.com/app/20590"><img src="image/steam.png"></a>
-			<a href="https://www.facebook.com/leagueoflegends/"><img src="image/facebook.png"></a>
+			<a href="https://www.facebook.com/leagueoflegends/"><img src="image/facebook.png"></a></div>
 			<div class="riot">
-				<a href="https://www.riotgames.com/en"><img src="image/riot.png"></a>
-		</div>
+				<a href="https://www.riotgames.com/en"><img src="image/riot.png"></a></div>
 	</footer>
 </body>
 </html>

@@ -9,8 +9,8 @@ fieldset img{
 }
 header img{
 	 display: block;
-   margin-left: 550px;
-   margin-right:550px;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer{
 	color: white;
@@ -43,6 +43,12 @@ color: white;
 	margin-top:-50px;
 
 }
+.signup{
+	font-size: 20px;
+	color: red;
+	text-align: right;
+
+}
 ul{
 	margin: 0px;
 	padding: 0px;
@@ -72,4 +78,50 @@ ul li ul li{
 }
 ul li:hover ul li{
 	display: block;
+}
+
+
+
+/*for mobile size responsive*/
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+header img{
+	width: 70%;
+	height: 70%;
+}
+ul{
+	display: none;
+}
+.signup{
+	font-size: 30px;
+}
+
+
+footer{
+	font-size: 20px;
+}
+footer img{
+	height: 15%;
+	width: 15%;
+}
+img{
+	width: 30%;
+	height:30%;
+}
+.contect{
+	display: none;
+}
+.riot{
+	width: 500%;
+	height: 500%;
+	padding-top: 10%;
+	margin-bottom: 10%;
+}
+}
+@media only screen and (min-width: 600px){
+.sidebar{
+	display: none;
+}
 }

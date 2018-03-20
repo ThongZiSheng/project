@@ -9,8 +9,8 @@ opacity: 0.9;
 }
 header img{
 	 display: block;
-   margin-left: 550px;
-   margin-right:550px;
+   margin-left: auto;
+   margin-right:auto;
 }
 footer{
 	color: white;
@@ -27,6 +27,9 @@ fieldset{
 	background-color:#404040;
 	color: white;
 }
+.out img{
+	display: none;
+}
 .contect img{
 	height: 2%;
 	width: 2%; 
@@ -38,7 +41,12 @@ fieldset{
 	float: left;
 	margin-top:-50px;
 }
+.signup{
+	font-size: 20px;
+	color: red;
+	text-align: right;
 
+}
 ul{
 	margin: 0px;
 	padding: 0px;
@@ -68,4 +76,54 @@ ul li ul li{
 }
 ul li:hover ul li{
 	display: block;
+}
+
+
+/*for mobile size responsive*/
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+header img{
+	width: 70%;
+	height: 70%;
+}
+ul{
+	display: none;
+}
+.signup{
+	font-size: 30px;
+}
+
+
+footer{
+	font-size: 20px;
+}
+img{
+	width: 100%;
+	height:100%;
+}
+.out img{
+	height: 15%;
+	width: 15%;
+	display: block;
+}
+footer img{
+	width: 15%;
+	height: 15%;
+}
+.contect{
+	display: none;
+}
+.riot{
+	width: 500%;
+	height: 500%;
+	padding-top: 10%;
+	margin-bottom: 10%;
+}
+}
+@media only screen and (min-width: 600px){
+.sidebar{
+	display: none;
+}
 }

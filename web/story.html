@@ -4,6 +4,9 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="story.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 	</style>
 </head>
@@ -15,6 +18,53 @@
       <button type="submit" style="height: 25px;width:25px;">
 		<i class="fa fa-search"></i>
       </button>
+
+
+
+
+      <!-- Sidebar (hidden by default) -->
+<div class="sidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:50%;max-width:500px; color: red" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button w3-animate-right" style="color: black">X</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="story.html" onclick="w3_close()" class="w3-bar-item w3-button">Story</a>
+  <a href="ablility.html" onclick="w3_close()" class="w3-bar-item w3-button">Ability</a>
+  <a href="item.html" onclick="w3_close()" class="w3-bar-item w3-button">Item</a>
+  <a href="skin.html" onclick="w3_close()" class="w3-bar-item w3-button">Skin</a>
+</nav>
+
+
+<div class="w3-top">
+  <div class="w3-xlarge" style="min-width:500px; ">
+    <div class="w3-button w3-padding-16 w3-left" style="color: red" onclick="w3_open()">☰</div>
+    
+  </div>
+</div>
+  
+
+</div>
+</div>
+
+<!--Script to open and close sidebar-->
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+
+
+
+      <div class="signup">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+  	  </div>
 	<ul style="opacity: 0.9; margin-bottom: 90px;">
 		<li><a>STORY</a>
 			<ul>
@@ -39,16 +89,16 @@
 		</li>
 		<li><a>SKIN</a>
 			<ul>
-				<li><a href="https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a6/Kindred_OriginalSkin.jpg/revision/latest?cb=20170615234802">DEFAULT</a></li>
-				<li><a href="https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b9/Kindred_ShadowfireSkin.jpg/revision/latest?cb=20170615234824">SHADOWFIRE</a></li>
-				<li><a href="https://vignette.wikia.nocookie.net/leagueoflegends/images/8/83/Kindred_SuperGalaxySkin.jpg/revision/latest?cb=20170615234843">SUPER GALAXY</a></li>
+				<li><a href="skin.html">DEFAULT</a></li>
+				<li><a href="skin.html">SHADOWFIRE</a></li>
+				<li><a href="skin.html">SUPER GALAXY</a></li>
 			</ul></li>
 	</ul>
 	</header>
 
 		<fieldset>
 			<ins><h3>Lore</h3></ins>
-			Kindred is the white embrace of nothingness and the gnashing of teeth in the dark. Shepherd and the butcher, poet and the primitive, they are one and both. When caught on the edge of life, louder than any trumpeting horn, it is the hammering pulse at one's throat that calls Kindred to their <img src="image/passivesmall.png"> hunt. Stand and greet Lamb's silvered bow and her <img src="image/qsmall.png"> arrows will lay you down swiftly. If you refuse her, Wolf will join you for his merry hunt, where every <img src="image/wsmall.png"> chase runs to its brutal end.
+			Kindred is the white embrace of nothingness and the gnashing of teeth in the dark. Shepherd and the butcher, poet and the primitive, they are one and both. When caught on the edge of life, louder than any trumpeting horn, it is the hammering pulse at one's throat that calls Kindred to their <div class="out"><img src="image/passivesmall.png"> </div>hunt. Stand and greet Lamb's silvered bow and her <div class="out"><img src="image/qsmall.png"></div>arrows will lay you down swiftly. If you refuse her, Wolf will join you for his merry hunt, where every <div class="out"><img src="image/wsmall.png"></div> chase runs to its brutal end.
 
 For as long as its people have known death, Kindred has stalked Valoran. When the final moment comes, it is said a true Demacian will turn to Lamb, taking the arrow, while through the shadowed streets of Noxus, Wolf leads the hunt. In the snows of the Freljord, before going off to fight, some warbands 'kiss the Wolf', vowing to honor his chase with the blood of their enemies. After each Harrowing, the town of Bilgewater gathers to celebrate its survivors and honor those granted a true death by Lamb and Wolf.
 
@@ -59,11 +109,11 @@ The earliest dated appearance of the eternal hunters is from a pair of ancient m
 <p></p>
 <p style="text-align: center;"><img src="image/lineLamb.png" >
 	<ins><h3>Forest for the Trees</h3></ins>
-The battle spilled over like a feast before them. Such delicious life - so many to end, so many to hunt! <img src="image/wolfsmall.png"> profileicon Wolf paced in the snow while  <img src="image/lambwolf.png"> profileicon Lamb danced lithely from sword edge to spear tip, the red-blooded butchery never staining her pale coat.
+The battle spilled over like a feast before them. Such delicious life - so many to end, so many to hunt! <div class="out"><img src="image/wolfsmall.png"></div> profileicon Wolf paced in the snow while  <div class="out"><img src="image/lambsmall.png"></div> profileicon Lamb danced lithely from sword edge to spear tip, the red-blooded butchery never staining her pale coat.
 
 "There is courage and pain here, Wolf. Many will gladly meet their end." She drew up her bow and let loose an arc of swift finality.
 
-The last breath of a soldier came with a ragged consent as his shield gave way to a heavy axe. Stuck in his heart was a single white <img src="image/qsmall.png"> arrow, shimmering with ethereal brilliance.
+The last breath of a soldier came with a ragged consent as his shield gave way to a heavy axe. Stuck in his heart was a single white <div class="out"><img src="image/qsmall.png"></div> arrow, shimmering with ethereal brilliance.
 
 "Courage bores me" the great black wolf grumbled as he tracked through the snow. "I am hungry and eager to chase."
 
@@ -71,7 +121,7 @@ The last breath of a soldier came with a ragged consent as his shield gave way t
 
 "I smell fear" he said, trembling with excitement.
 
-Across the muddied field of snow, a squire - too young for battle, but with blade in hand, nonetheless - saw that Kindred had<img src="image/passivesmall.png"> marked all in the valley.
+Across the muddied field of snow, a squire - too young for battle, but with blade in hand, nonetheless - saw that Kindred had<div class="out"><img src="image/passivesmall.png"></div> marked all in the valley.
 
 "I want the tender-thing. Does it see us, Lamb?"
 
@@ -85,7 +135,7 @@ Wolf snapped in the air and rolled his face in the snow like a new pup.
 
 With that, Wolf bounded across the field after the youth, a howl thundering through the valley. His shadowed body swept over the remains of the newly dead and their useless, shattered weapons.
 
-The squire turned and ran for the woods until thick black trunks passed in a blur. He pressed on, the frozen air burning his lungs. He looked once more for his hunter, but could see nothing but the darkening trees. The shadows closed tightly around him and he suddenly realized there was no escape. It was the black body of Wolf that was everywhere at once. The chase was at its end. Wolf buried his sharp <img src="image/wsmall.png"> teeth in the squire's neck, tearing out ribbons of vibrant life.
+The squire turned and ran for the woods until thick black trunks passed in a blur. He pressed on, the frozen air burning his lungs. He looked once more for his hunter, but could see nothing but the darkening trees. The shadows closed tightly around him and he suddenly realized there was no escape. It was the black body of Wolf that was everywhere at once. The chase was at its end. Wolf buried his sharp <div class="out"><img src="image/wsmall.png"></div> teeth in the squire's neck, tearing out ribbons of vibrant life.
 
 Wolf reveled in the boy's scream and crunching bones. Lamb, who had trailed behind, laughed to see such sport. Wolf turned and asked, in a voice more growl than speech, "Is this music, Lamb?"
 
@@ -93,7 +143,7 @@ Wolf reveled in the boy's scream and crunching bones. Lamb, who had trailed behi
 
 "Again", Wolf licked the last drop of the youth's life from his canine jaws. "I want to chase again, little Lamb."
 
-"There are always more" she whispered. "Until the day there is only <img src="image/headsmall.png"> Kindred."
+"There are always more" she whispered. "Until the day there is only <div class="out"><img src="image/headsmall.png"></div> Kindred."
 
 "And then will you run from me?"
 
@@ -106,7 +156,7 @@ Lamb turned back to the battle. "I would never run from you, dear Wolf."
 
 "Oh, but how wondrous a dream is life? Only now - too late! - do I wake to see its myriad of splendors", she bemoaned.
 
-With a puff of smoke and glittering powder, <img src="image/headsmall.png"> Kindred made a grand entrance upon the stage. As per tradition, they were played by one actor, his head covered by two opposing masks. He approached Magga, the white mask of the <img src="image/lambsmall.png"> profileicon Lamb facing her.
+With a puff of smoke and glittering powder, <div class="out"><img src="image/headsmall.png"></div> Kindred made a grand entrance upon the stage. As per tradition, they were played by one actor, his head covered by two opposing masks. He approached Magga, the white mask of the <div class="out"><img src="image/lambsmall.png"></div> profileicon Lamb facing her.
 
 "Hark! Do I hear a plea for my keenest arrow? Come, child, let the warmth of your heart fade into the cold embrace of oblivion."
 
@@ -138,7 +188,7 @@ Magga moved closer to the crackling fire so its pops and whistles would drown ou
 
 But sleep never came. Instead, Magga tossed and turned, thinking about the looks on the audience's faces as the coiled spurts of blood unfurled from her neckline. A pretty maiden struck dead by her own naïveté was all the theatrical pomp Illusian could muster, but the crowd lusted after the gruesome façade.
 
-Eventually, she left her bedroll and set out into the woods to soothe her unsettled mind.
+Eventually, she left her bedroll and set out into the woods to soothe her unsettled mind.<br>
 <img src="image/lore2.png">
 <p style="text-align: center;"><img src="image/lineTwo.png">
 		</fieldset>

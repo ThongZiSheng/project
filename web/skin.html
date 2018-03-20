@@ -2,24 +2,21 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="ablility.css">
+	<link rel="stylesheet" type="text/css" href="skin.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-</style>
+	<style></style>
 </head>
 <body>
 	<header>
-		<a href="index.html">
+	<a href="index.html">
 	<img src="image/lol.png" heigth="150" width="250"></a>
 	<input type="text" placeholder="Search.." name="search">
       <button type="submit" style="height: 25px;width:25px">
       	<i class="fa fa-search"></i>
       </button>
-
-
 
       <!-- Sidebar (hidden by default) -->
 <div class="sidebar">
@@ -28,7 +25,7 @@
   class="w3-bar-item w3-button w3-animate-right" style="color: black">X</a>
   <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
   <a href="story.html" onclick="w3_close()" class="w3-bar-item w3-button">Story</a>
-  <a href="ability.html" onclick="w3_close()" class="w3-bar-item w3-button">Ability</a>
+  <a href="ablility.html" onclick="w3_close()" class="w3-bar-item w3-button">Ability</a>
   <a href="item.html" onclick="w3_close()" class="w3-bar-item w3-button">Item</a>
   <a href="skin.html" onclick="w3_close()" class="w3-bar-item w3-button">Skin</a>
 </nav>
@@ -58,13 +55,12 @@ function w3_close() {
 
 
 
-
-
       <div class="signup">
       <a href="login.html">Login</a>
       <a href="signup.html">Sign Up</a>
   	  </div>
-	<ul style="margin-bottom: 90px;">
+	</header>
+	<ul>
 		<li><a>STORY</a>
 			<ul>
 				<li><a href="story.html">LEARN MORE</a></li>
@@ -93,44 +89,42 @@ function w3_close() {
 				<li><a href="skin.html">SUPER GALAXY</a></li>
 			</ul></li>
 	</ul>
-	</header>
-	<p></p>
-	<p></p>
-	<p></p>
-	<fieldset style="background-color: #668099; opacity:2;">
-		<h1><ins>ABILITYS:</ins><img src="image/head.jpg" style="height: 100px; width: 100px; padding-right: 20%;"><br>Roles:<img src="image/marksman.png" style="height: 100px; width: 100px;">Marksman</h1>		
-	</fieldset>
-	<fieldset>
-		<h1><ins>Passive</ins></h1><h2><img src="image/passive.png">Mark of the Kindred</h2><h4>STATIC COOLDOWN: 25 / 75 <br>
-		ON-TARGET COOLDOWN: 240</h4>
-	</fieldset>
-	<fieldset>
-		<h1><ins>Q SKILL</ins></h1>
-		<h2><img src="image/q.png">Dance of Arrows</h2><h4>TARGET RANGE: 340 <br>EFFECT RADIUS: 500 (+ 75 - 250 (based on Marks))<br> SPEED: 500 <br
-			>COST: 35 MANA <br>COOLDOWN: 9</h4>
-	</fieldset>
-	<fieldset>
-		<h1><ins>W SKILL</ins></h1>
-		<h2><img src="image/w.png">Wolf's Frenzy</h2><h4>TARGET RANGE: 500 <br>
-			EFFECT RADIUS: 800 <br>SPEED: 1400 <br>COST: 40 MANA <br>COOLDOWN: 18 / 17 / 16 / 15 / 14</h4>
-	</fieldset>
+	<br>
 
-	<fieldset>
-		<h1><ins>E SKILL</ins></h1>
-		<h2><img src="image/e.png">Mounting Dread</h2><h4>TARGET RANGE: 500 (+ 75 - 250 (based on Marks)) <br>COST: 50 MANA <br>COOLDOWN: 16 / 15 / 14 / 13 / 12</h4>
-	</fieldset>
 
-	<fieldset>
-		<h1><ins>R SKILL</ins></h1>
-		<h2><img src="image/r.png">Lamb's Respite</h2><h4>EFFECT RADIUS: 500 <br>COST: 100 MANA <br>COOLDOWN: 160 / 130 / 100</h4>
-	</fieldset>
-	<fieldset>
-		<h1><ins>ABILITY SEQUENCE</ins></h2>
-		<h2><img src="image/q.png">Max Your Q skill first</h2>
-		<h2><img src="image/w.png">Level up W skill when lv 1 then max it second</h2>
-		<h2><img src="image/e.png">Max your E skill last</h2>
-		<h2><img src="image/r.png">Max R skill when is available</h2>
-	</fieldset>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="image/defaultlSkin.jpg" style="width:100%">
+    <div class="text">Default Skin</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="image/fireSkin.jpg" style="width:100%">
+    <div class="text">ShadowFire Kindred</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="image/GalaxySkin.jpg" style="width:100%">
+    <div class="text">Super Galaxy Kindred</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+		
+
+
 	<footer>
 		<h4><a href="https://na.leagueoflegends.com/en/"><img src="image/1.png" height="3%" width="3%"></a>&copy;Copyright 2018 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, <br>services marks, or registered trademarks of Riot Games, Inc.</h4>
 		<div class="contect">
@@ -141,5 +135,6 @@ function w3_close() {
 			<div class="riot">
 				<a href="https://www.riotgames.com/en"><img src="image/riot.png"></a></div>
 	</footer>
+	<script src="skin.js"></script>
 </body>
 </html>

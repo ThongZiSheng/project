@@ -3,19 +3,71 @@
 <head>
 	<title>index</title>
 	<link rel="stylesheet" type="text/css" href="styleerm.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 </style>
 </head>
 <body>
+	
 	<header>
+	<div class="head">
 	<a href="index.html">
-	<img src="image/lol.png" heigth="150" width="250"></a>
+	<img src="image/lol.png" heigth="150" width="250"></a></div>
+	<div class="search">
 	<input type="text" placeholder="Search.." name="search">
       <button type="submit" style="height: 25px;width:25px">
       	<i class="fa fa-search"></i>
       </button>
+  </div>
+
+
+
+  	<!-- Sidebar (hidden by default) -->
+<div class="sidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:50%;max-width:500px; color: red" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button w3-animate-right" style="color: black">X</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="story.html" onclick="w3_close()" class="w3-bar-item w3-button">Story</a>
+  <a href="ablility.html" onclick="w3_close()" class="w3-bar-item w3-button">Ability</a>
+  <a href="item.html" onclick="w3_close()" class="w3-bar-item w3-button">Item</a>
+  <a href="skin.html" onclick="w3_close()" class="w3-bar-item w3-button">Skin</a>
+</nav>
+
+
+<div class="w3-top">
+  <div class="w3-xlarge" style="min-width:500px; ">
+    <div class="w3-button w3-padding-16 w3-left" style="color: red" onclick="w3_open()">☰</div>
+    
+  </div>
+</div>
+  
+
+</div>
+</div>
+
+<!--Script to open and close sidebar-->
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+
+
+
+      <div class="signup">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+  	  </div>
 	</header>
 	<ul>
 		<li><a>STORY</a>
@@ -41,9 +93,9 @@
 		</li>
 		<li><a>SKIN</a>
 			<ul>
-				<li><a href="https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a6/Kindred_OriginalSkin.jpg/revision/latest?cb=20170615234802">DEFAULT</a></li>
-				<li><a href="https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b9/Kindred_ShadowfireSkin.jpg/revision/latest?cb=20170615234824">SHADOWFIRE</a></li>
-				<li><a href="https://vignette.wikia.nocookie.net/leagueoflegends/images/8/83/Kindred_SuperGalaxySkin.jpg/revision/latest?cb=20170615234843">SUPER GALAXY</a></li>
+				<li><a href="skin.html">DEFAULT</a></li>
+				<li><a href="skin.html">SHADOWFIRE</a></li>
+				<li><a href="skin.html">SUPER GALAXY</a></li>
 			</ul></li>
 	</ul>
 	<fieldset style="text-align: center; background-color:#333333;">
@@ -52,8 +104,9 @@
 			<h1 style="color: #cc9900">~ Kindred</h1>
 	</fieldset>
 	
-	<iframe width="500" height="315" src="https://www.youtube.com/embed/h0Pwn7G-eLE" frameborder="0" allow="autoplay; encrypted-media"></iframe>
-	<iframe width="500" height="315" src="https://www.youtube.com/embed/wpQRZCoMKGs" frameborder="0" allow="autoplay; encrypted-media"></iframe><br>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/h0Pwn7G-eLE" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/wpQRZCoMKGs" frameborder="0" allow="autoplay; encrypted-media"></iframe><br>
 	<fieldset style="background-color: grey;"><h1>Skin Spotlight</h1></fieldset>
 	<iframe width="500" height="315" src="https://www.youtube.com/embed/PQEwSQSeS44" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/24TtaTqI8v0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -63,9 +116,9 @@
 			<a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=106440"><img src="image/google.png"></a>
 			<a href="https://twitter.com/leagueoflegends"><img src="image/twitter.png"></a>
 			<a href="https://steamcommunity.com/app/20590"><img src="image/steam.png"></a>
-			<a href="https://www.facebook.com/leagueoflegends/"><img src="image/facebook.png"></a>
+			<a href="https://www.facebook.com/leagueoflegends/"><img src="image/facebook.png"></a></div>
 			<div class="riot">
-				<a href="https://www.riotgames.com/en"><img src="image/riot.png"></a>
+				<a href="https://www.riotgames.com/en"><img src="image/riot.png"></a></div>
 	</footer>
-</boday>
+</body>
 </html>
